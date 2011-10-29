@@ -1,0 +1,250 @@
+/* ============= */
+/* = Reset.css = */
+/* ============= */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* =========== */
+/* = General = */
+/* =========== */
+
+body{
+	background:#fff;
+	color:darkgray;
+	font: 16px/18px Arial,Helvetica,sans-serif;
+}
+
+a{
+    color: #1CA5EC;
+    outline: medium none;
+    text-decoration: none;
+}
+
+/* =========== */
+/* = Wrapper = */
+/* =========== */
+#wrapper{
+	width:960px;
+	margin:5px auto;
+}
+/* ======================= */
+/* = Tabby jQuery Plugin = */
+/* ======================= */
+
+.tabby {
+    clear: both;
+    color: #616161;
+    margin:0 auto;
+    position: relative;
+    width: 480px;
+}
+	/* ============== */
+	/* = Tabby Tabs = */
+	/* ============== */
+	.tabby .tabby_tabs {
+	    height: 30px;
+	    margin-bottom: -1px;
+	    overflow: hidden;
+	    position: relative;
+	    width: 100% !important;
+	    z-index: 100;
+	}
+	
+	/* =============================== */
+	/* = Tabby Next/Previous Buttons = */
+	/* =============================== */
+	.tabby a.prev, .tabby a.next {
+	    border: 1px solid #D4D4D4;
+	    display: inline;
+	    height: 28px;
+	    outline: medium none;
+	    position: absolute;
+	    top: 0;
+	    width: 10px;
+	    z-index: 4;
+	}
+	
+	.tabby a.prev {
+	    left: 0;
+		border-radius:0 0 20px 0;
+	}
+
+	.tabby a.next {
+	    right: 0;
+		border-radius:0 0 0 20px;
+	}
+	
+	.tabby a.prev.disabled ,.tabby a.next.disabled{
+	    display:none;
+	}
+
+	/* ======================== */
+	/* = Tabby Tabs container = */
+	/* ======================== */
+	.tabby .container {
+		margin: 0;
+	    position: relative !important;
+	}
+	
+	.tabby ul.tabs {
+	    height: 30px;
+	    list-style: none outside none;
+	    margin: 0;
+	    padding: 0;
+	    width: 10000px;
+	}
+	
+		.tabby ul.tabs li{
+		    float:left;
+		}
+		
+			.tabby ul.tabs li a {
+			    -moz-transition: all 0.1s linear 0s;
+			    background-color: #E6E6E6;
+			    background-image: -moz-linear-gradient(center top , #FFFFFF, #FFFFFF 25%, #E6E6E6);
+			    background-repeat: no-repeat;
+			    border-color: #CCCCCC #CCCCCC #BBBBBB;
+			    border-style: solid;
+			    border-width: 1px;
+			    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+			    color: #6A6A6A;
+			    cursor: pointer;
+			    display: inline-block;
+			    font-size: 13px;
+			    line-height: normal;
+			    padding: 7px 14px 6px;
+			    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+				border-right:none;
+			}
+			
+		 	.tabby ul.tabs a:hover {
+			    background-position: 0 -15px;
+			    color: #333333;
+			    text-decoration: none;
+			}
+			
+			.tabby ul.tabs li a.first_tab {
+			    border-left: 1px solid #D4D4D4;
+			}
+			
+			.tabby ul.tabs a.tab_active {
+			    background: none repeat scroll 0 0 #FFFFFF;
+			    border-bottom-color: #FFFFFF;
+			    color: #000;
+			font-weight:bold;
+			}
+	
+	/* ====================== */
+	/* = Tabby Tabs Content = */
+	/* ====================== */
+	.tabby .view_container {
+	    background-color: #FFFFFF;
+	    border: 1px solid #D4D4D4;
+	    height: 440px;
+	    overflow: hidden;
+	    padding: 10px 10px 23px;
+	    position: relative;
+	    z-index: 5;
+	}
+	.tabby .view {
+	    height: 100%;
+	    overflow: hidden;
+	    position: relative;
+	}
+		.tabby .view h2 {
+		    color: #454545;
+		    font-size: 16px;
+		    margin: 0 0 16px;
+		    padding: 0;
+		}
+	.tabby .tab_view{
+		display: none;
+	    width: 100%;
+	}
+	.tabby .first_tab_view {
+	    display: block;
+	}
+
+/* ============================================================= */
+/* = Alert Message http://twitter.github.com/bootstrap/#alerts = */
+/* ============================================================= */
+
+.alert-message.error {
+    background-color: #C43C35;
+    background-image: -moz-linear-gradient(center top , #EE5F5B, #C43C35);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+}
+.alert-message {
+    background-color: #EEDC94;
+    background-image: -moz-linear-gradient(center top , #FCEEC1, #EEDC94);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset;
+    color: #404040;
+    margin-bottom: 8px;
+    padding: 7px 15px;
+    position: relative;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	font-size:14px;
+}
+.close {
+    color: #000000;
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 13.5px;
+    opacity: 0.2;
+    text-shadow: 0 1px 0 #FFFFFF;
+}

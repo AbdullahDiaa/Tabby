@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tabby Plugin for jQuery</title>
+	<link rel="stylesheet" href="css/css.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/tabby.jquery.js"></script>
+	<script type="text/javascript">    	
+	$(document).ready(function() {
+		$('div#tabby').Tabby();
+	});
+    </script>
+</head>
+<body
+	<div id="wrapper">
+		
+		<div id="tabby" class="tabby">
+			<div id="alertbox">
+				<div class="alert-message error">
+			    	<a class="close" href="#">×</a>
+			    	<p><strong>Holy guacamole!</strong> cannot get timeline updates !!</p>
+			    </div>
+			</div>
+			<div class="tabby_tabs">                                                                                                                                          
+
+				<a href="#prev" class="prev disabled"></a>
+
+				<div class="container">
+					<ul class="tabs">
+						<li><a href="#timeline" rel="tab_1" class="tab first_tab tab_active">Timeline</a></li>
+						<li><a href="#mentions" rel="tab_2" class="tab">Mentions</a></li>                                   
+						<li><a href="#dms" rel="tab_3" class="tab">Direct Messages</a></li>
+						<li><a href="#search" rel="tab_4" class="tab">Search</a></li>                                   
+						<li><a href="#hashtag" rel="tab_5" class="tab">#hashtag</a></li> 
+						<li><a href="#hashtag" rel="tab_6" class="tab">#hashtag</a></li> 
+						<li><a href="#hashtag" rel="tab_7" class="tab">#hashtag</a></li> 
+						<li><a href="#hashtag" rel="tab_8" class="tab">#hashtag</a></li>  
+						<li><a href="#hashtag" rel="tab_9" class="tab">#hashtag</a></li> 
+					</ul>
+				</div><!-- END container -->
+
+				<a href="#next" class="next"></a>
+                                                                                                
+			</div><!-- END tabby_tabs -->
+           
+			<div class="view_container">
+				<div class="view">
+				
+					<div id="timeline" class="tab_view first_tab_view">
+						<div class="text">
+						</div>
+					</div><!-- END timeline -->
+				
+					<div id="mentions" class="tab_view">
+						<h2>Mentions</h2>
+						<div class="text">
+							Mentions here :D
+						</div>
+					</div><!-- END mentions -->
+				
+					<div id="dms" class="tab_view">
+						<h2>Direct Messages</h2>
+						<div class="text">
+							Direct Messages here :D
+						</div>
+					</div><!-- END direct messages -->
+				
+					<div id="search" class="tab_view">
+						<h2>Search</h2>
+						<div class="text">
+							Search here :D
+						</div>
+					</div><!-- END search -->
+				
+				</div> <!-- END view -->
+			</div> <!-- END view_container -->   
+              
+		</div><!-- END tabby-->
+	</div><!-- END wrapper-->
+</body>
+</html>

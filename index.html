@@ -5,21 +5,23 @@
 	<title>Tabby Plugin for jQuery</title>
 	<link rel="stylesheet" href="css/css.css">
 	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.mousewheel.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
 	<script src="js/tabby.jquery.js"></script>
 	<script type="text/javascript">    	
 	$(document).ready(function() {
-		$('div#tabby').Tabby();
+		$('#tabby').Tabby();
 	});
     </script>
 </head>
-<body
+<body>
 	<div id="wrapper">
 		
 		<div id="tabby" class="tabby">
 			<div id="alertbox">
 				<div class="alert-message error">
 			    	<a class="close" href="#">×</a>
-			    	<p><strong>Holy guacamole!</strong> cannot get timeline updates !!</p>
+			    	<p><strong>Holy!</strong> cannot get timeline updates !! <a title="Add tab" class="add btn_enabled" href="#add">Add tab</a> | <a title="Remove tab" class="remove btn_enabled" href="#remove">Remove tab</a></p>
 			    </div>
 			</div>
 			<div class="tabby_tabs">                                                                                                                                          
@@ -31,12 +33,7 @@
 						<li><a href="#timeline" rel="tab_1" class="tab first_tab tab_active">Timeline</a></li>
 						<li><a href="#mentions" rel="tab_2" class="tab">Mentions</a></li>                                   
 						<li><a href="#dms" rel="tab_3" class="tab">Direct Messages</a></li>
-						<li><a href="#search" rel="tab_4" class="tab">Search</a></li>                                   
-						<li><a href="#hashtag" rel="tab_5" class="tab">#hashtag</a></li> 
-						<li><a href="#hashtag" rel="tab_6" class="tab">#hashtag</a></li> 
-						<li><a href="#hashtag" rel="tab_7" class="tab">#hashtag</a></li> 
-						<li><a href="#hashtag" rel="tab_8" class="tab">#hashtag</a></li>  
-						<li><a href="#hashtag" rel="tab_9" class="tab">#hashtag</a></li> 
+						<li><a href="#search" rel="tab_4" class="tab">Search</a></li>
 					</ul>
 				</div><!-- END container -->
 

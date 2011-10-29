@@ -70,8 +70,8 @@ a{
 /* = Wrapper = */
 /* =========== */
 #wrapper{
-	width:960px;
-	margin:5px auto;
+    margin: 0 auto;
+    width: 480px;
 }
 /* ======================= */
 /* = Tabby jQuery Plugin = */
@@ -80,7 +80,6 @@ a{
 .tabby {
     clear: both;
     color: #616161;
-    margin:0 auto;
     position: relative;
     width: 480px;
 }
@@ -155,12 +154,13 @@ a{
 			    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
 			    color: #6A6A6A;
 			    cursor: pointer;
-			    display: inline-block;
+			    display: block;
 			    font-size: 13px;
 			    line-height: normal;
 			    padding: 7px 14px 6px;
 			    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-				border-right:none;
+				border-left:none;
+				margin:0;
 			}
 			
 		 	.tabby ul.tabs a:hover {
